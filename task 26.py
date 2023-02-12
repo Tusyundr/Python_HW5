@@ -5,10 +5,10 @@
 #A = 2; B = 3 -> 8
 
 def f(a, b):
-    if (b == 1):
-        return (a)
-    if (b != 1):
-        return (a * f(a, b - 1))
+     if (b == 1):
+         return (a)
+     if (b != 1):
+         return (a * f(a, b - 1))
 a = int(input("Введите число A: "))
 b = int(input("Введите его степень B: "))
 print("Результат:", f(a, b))
@@ -16,16 +16,16 @@ print("Результат:", f(a, b))
 #еще один вариант:
 
 # def f(a, b):
-#      def k(b):
-#           if b % 2 == 0:
-#                return True
-#           return False
-#      if b == 0:
-#           return 1
-#      if k(b):
-#           x = f(a, b / 2)
-#           return x * x
-#      return a * f(a, b - 1)
+#       def k(b):
+#            if b % 2 == 0:
+#                 return True
+#            return False
+#       if b == 0:
+#            return 1
+#       if k(b):
+#            x = f(a, b / 2)
+#            return x * x
+#       return a * f(a, b - 1)
 # a = int(input('Введите A:'))
 # b = int(input('Введите B:'))
 # print(f'Результат: {f(a, b)}')
